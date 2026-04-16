@@ -11,5 +11,6 @@ public class Chap04_LAB1 {
         System.out.print(originStr.charAt(2));
         System.out.print(originStr.charAt(1));
         System.out.print(originStr.charAt(0));
+        System.out.print(originStr.charAt(0));
     }
 }
