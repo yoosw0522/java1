@@ -1,4 +1,4 @@
-package ai0423;
+package ai0514;
 
 import java.util.Scanner;
 
@@ -8,7 +8,6 @@ public class BMITest2 {
         Scanner s1 = new Scanner(System.in);//문자열 입력용
         System.out.println("=============== BMI(Body Index Mass) ===============\n");
 
-        while (true){
         System.out.print("* 체중(㎏, 실수값) 입력:");
         double weight = s.nextDouble();
 
@@ -17,8 +16,6 @@ public class BMITest2 {
 
         System.out.print("* 성명 입력:");
         String name = s1.nextLine();
-        if(name.equals("exit"))
-            break;
 
         double bmi = weight / Math.pow(height/100, 2); //((height/100)*(height/100))
         String result1, result2;
