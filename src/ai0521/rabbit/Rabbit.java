@@ -49,13 +49,13 @@ public class Rabbit {
         System.out.printf("%s 모양의 토끼는(%d, %d) 좌표에 위치하고 있다.\n", getShape(), getxPos(), getyPos());
     }
 
-    // x축에서 10씩 오른쪽으로 이동하는 메소드
-    public void moveRight() {
-        this.xPos += 10;
+    //    x축으로 10씩 오른쪽으로 이동하는 매소드
+    public void rightMoveTen(){
+        xPos += 10 ;
     }
 
-    // x축에서 10씩 왼쪽으로 이동하는 메소드
-    public void moveLeft() {
-        this.xPos -= 10;
+    //    x축으로 10씩 왼쪽으로 이동하는 매소드
+    public void leftMoveTen(){
+        xPos -= 10;
     }
 }

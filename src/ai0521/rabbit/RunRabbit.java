@@ -22,6 +22,16 @@ public class RunRabbit {
         rabbit1.printInfo();
         System.out.printf
                 ("%s 모양의 토끼는(%d, %d) 좌표에 위치하고 있다.\n", rabbit1.getShape(),rabbit1.getxPos(),rabbit1.getyPos());
-        //좁은 모양의 토끼가 현재위치에서 오른쪽으로 50만큼 갔다가 왼쪽으로 20만큼 이동하게 해줘
+        //        좀은 네모 모양의 토끼가 현재 위치에서 오른쪽으로 50만큼, 왼쪽으로 20만큼 이동
+        System.out.print("현재는 ");
+        rabbit2.printInfo();        // 좁은 네모 모양 토끼의 현재 위치 출력
+        for (int i = 0; i < 5; i++) {
+            rabbit2.rightMoveTen();         // 10씩 오른쪽으로 5번 이동
+        }
+        rabbit2.printInfo();
+        for (int i = 0; i < 2; i++) {
+            rabbit2.leftMoveTen();          // 10씩 왼쪽으로 2번 이동
+        }
+        rabbit2.printInfo();
     }
 }
